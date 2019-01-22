@@ -24,6 +24,10 @@ public class PrimeFactorTest extends TestCase {
 		assertEquals(listPrimeFactors(2, 2), generate(4));
 	}
 
+	public void testSix() throws Exception {
+		assertEquals(listPrimeFactors(2, 3), generate(6));
+	}
+
 	private List<Integer> listPrimeFactors(int... ints) {
 		List<Integer> list = new ArrayList<Integer>();
 		for (int i : ints)
